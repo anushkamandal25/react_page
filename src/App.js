@@ -1,11 +1,18 @@
-
+import React from 'react';
 import './App.css';
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
 
 
 
 import Navbar from "./Components/Navbar";
 //import Introduction from "./Components/Introduction";
+
+import Footer from "./Components/Footer";
+
+import Carousel from 'react-bootstrap/Carousel';
+import Card from 'react-bootstrap/Card';
+import Image from 'react-bootstrap/Image';
+
 
 //for modal
 import Button from 'react-bootstrap/Button'
@@ -15,29 +22,17 @@ import ModalTitle from 'react-bootstrap/ModalTitle';
 import ModalBody from 'react-bootstrap/ModalBody';
 
 
-
-
-
-import Footer from "./Components/Footer";
-
-import Carousel from 'react-bootstrap/Carousel';
-import Card from 'react-bootstrap/Card';
-import Image from 'react-bootstrap/Image';
-
-
-
-
 import Form from 'react-bootstrap/Form'
 import FloatingLabel from 'react-bootstrap/FloatingLabel'
 
 
-function Example() {
+{/*function Example() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 }
-
+*/}
 
 
 function App() {
@@ -47,9 +42,10 @@ function App() {
     {/*<Introduction />*/}
     {/*<Carousels />*/}
     {/*<Cards />*/}
-   
+   <br />
+   <br />
   
-
+   <div class="container mt-5 ">
     <Card>
   <Card.Header><h2>Hello! I am Anushka Mandal.</h2></Card.Header>
   <Card.Img variant="left" src={require('./pic/intro.jpeg')} width="200" height="200" />
@@ -64,6 +60,7 @@ I will be guiding you on the information and activities related to the club.{' '
     </blockquote>
   </Card.Body>
 </Card>
+</div>
 
 <br></br>
 <Card>
@@ -73,7 +70,7 @@ I will be guiding you on the information and activities related to the club.{' '
 
 
 
-    <div style={{ display: 'block', width: 700, padding: 30 }}>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <Carousel>
   <Carousel.Item>
     <img
@@ -139,21 +136,21 @@ I will be guiding you on the information and activities related to the club.{' '
     <br />
     <br />
 
-    <Card>
+<Card className="card d-flex">
   <Card.Header><h2>OUR FESTS</h2></Card.Header>
 </Card>
 <br />
 <br />
-    <div style={{ display: 'flex', width: 300, padding: 2}}>
-    <Card>
+    <div style={{ display: 'flex', width: 900, padding: 50 ,margin: 50,marginleft: 50,marginright: 50, }}>
+    <Card className="card1">
     <Card.Img variant="top" src={require('./pic/ar20.jpeg')} />
   </Card>
   <br />
-  <Card>
+  <Card className="card1">
     <Card.Img variant="bottom" src={require('./pic/ar21.jpeg')} />
   </Card>
   <br />
-  <Card>
+  <Card className="card1">
     <Card.Img variant="bottom" src={require('./pic/ar22.jpeg')} />
   </Card>
   </div>
@@ -169,15 +166,18 @@ I will be guiding you on the information and activities related to the club.{' '
   <br />
 
   <>
-  <Form.Floating className="mb-3">
+  <Form.Floating className="container mt-5">
     <Form.Control
       id="floatingInputCustom"
+      name="email" class="email form-control"
       type="email"
       placeholder="name@example.com"
     />
+    
     <label htmlFor="floatingInputCustom">Email address</label>
-  </Form.Floating>
-  <Form.Floating>
+  
+  </Form.Floating >
+  <Form.Floating className="container mt-5">
     <Form.Control
       id="floatingContactCustom"
       type="number"
@@ -186,18 +186,19 @@ I will be guiding you on the information and activities related to the club.{' '
     <label htmlFor="floatingPasswordCustom">Contact Number</label>
   </Form.Floating>
   <br />
-  <Form.Select aria-label="Default select example">
-  <option>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
+  <Form.Select aria-label="Default select example" className="container mt-5 form-select form-select-md mb-3 d-block my-5 mx-auto " aria-label=".form-select-md example" id="myYear">
+  <option>Mention Your Current Year</option>
+  <option value="1">1st</option>
+  <option value="2">2nd</option>
+  <option value="3">3rd</option>
+  <option value="3">4th</option>
 </Form.Select>
   <br />
   <br />
 </>
 
 
-<Button variant="primary" onClick={handleShow}>
+{/*<Button variant="primary" onClick={handleShow}>
         Submit
 </Button>
 
@@ -220,7 +221,7 @@ I will be guiding you on the information and activities related to the club.{' '
   </Button>
   <Button variant="primary">Understood</Button>
   </Modal.Footer>
-  </Modal>
+  </Modal>*/}
     
     
 
@@ -230,6 +231,6 @@ I will be guiding you on the information and activities related to the club.{' '
   );
 }
 
-render(<Example />);
+//render(<Example />);
 
 export default App;

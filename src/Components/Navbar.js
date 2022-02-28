@@ -36,17 +36,6 @@ export default function header(props) {
     </nav>
 
 
-
-     <section>
-            <div className="container mt-5 bg-light" />
-                <div className="jumbotron bg-light"/>
-                    <img className="float-start img-fluid me-3" src="./pic/intro.jpeg" className="rounded-circle" alt=""/>
-                    <h2 className="display-4">Hello! I am Anushka Mandal.</h2>
-                    <p className="lead"><i> Welcome to the of page of CCA,the technical gymkhana of NIT Durgapur.</i><br/>
-                    I will be guiding you on the information and activities related to the club.</p>
-                    <hr className="my-4"></hr>
-     </section>
-
      </>
   )
 }
