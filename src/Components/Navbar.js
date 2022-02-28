@@ -25,10 +25,10 @@ export default function header(props) {
                 <a className="nav-link" href="#">JOIN US</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="weather_time/weather.html" target="_blank" >WEATHER</a>
+                <a className="nav-link" href="https://react-weather-48i.pages.dev/" target="_blank" >WEATHER</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="ToDo/todo.html" target="_blank" >TO-DO LIST</a>
+                <a className="nav-link" href="https://108b2e64.react-todo-list-9bs.pages.dev/" target="_blank" >TO-DO LIST</a>
               </li>
             </ul>
           </div>

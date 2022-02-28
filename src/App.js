@@ -63,7 +63,7 @@ I will be guiding you on the information and activities related to the club.{' '
 </div>
 
 <br></br>
-<Card>
+<Card className="card d-flex container mt-5" >
   <Card.Header><h1>CENTRE FOR COGNITIVE ACTIVITIES</h1>
       <h2>FIVE CELLS:</h2></Card.Header>
 </Card>
@@ -136,7 +136,7 @@ I will be guiding you on the information and activities related to the club.{' '
     <br />
     <br />
 
-<Card className="card d-flex">
+<Card className="card d-flex container mt-5">
   <Card.Header><h2>OUR FESTS</h2></Card.Header>
 </Card>
 <br />
@@ -157,8 +157,8 @@ I will be guiding you on the information and activities related to the club.{' '
   <br />
   <br />
 
-<Card>
-  <Card.Header><h2>JOIN US</h2>
+<Card  className="container mt-5">
+  <Card.Header ><h2>JOIN US</h2>
       <h3>We are hiring!</h3></Card.Header>
 </Card>
 
