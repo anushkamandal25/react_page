@@ -1,6 +1,15 @@
-import React from 'react';
+//import React from 'react';
 import './App.css';
-//import React, { useState } from 'react';
+import React, { useState } from 'react';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
 
 
 
@@ -26,22 +35,29 @@ import Form from 'react-bootstrap/Form'
 import FloatingLabel from 'react-bootstrap/FloatingLabel'
 
 
-{/*function Example() {
+
+  
+
+
+
+
+
+function App() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-}
-*/}
 
-
-function App() {
   return (
     <>
     <Navbar title=" CCA "/>
+
+    
     {/*<Introduction />*/}
     {/*<Carousels />*/}
     {/*<Cards />*/}
+
+    
    <br />
    <br />
   
@@ -136,12 +152,12 @@ I will be guiding you on the information and activities related to the club.{' '
     <br />
     <br />
 
-<Card className="card d-flex container mt-5">
+<Card className="card d-flex container mt-5" id="cards">
   <Card.Header><h2>OUR FESTS</h2></Card.Header>
 </Card>
 <br />
 <br />
-    <div style={{ display: 'flex', width: 900, padding: 50 ,margin: 50,marginleft: 50,marginright: 50, }}>
+    <div className="d-flex row p-5 mr-1 mx-auto" >
     <Card className="card1">
     <Card.Img variant="top" src={require('./pic/ar20.jpeg')} />
   </Card>
@@ -193,12 +209,13 @@ I will be guiding you on the information and activities related to the club.{' '
   <option value="3">3rd</option>
   <option value="3">4th</option>
 </Form.Select>
-  <br />
-  <br />
+
+
+ 
 </>
 
 
-{/*<Button variant="primary" onClick={handleShow}>
+<Button type="button" className="btn btn-primary btn-lg d-block my-5 mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" variant="primary" onClick={handleShow}>
         Submit
 </Button>
 
@@ -209,19 +226,18 @@ I will be guiding you on the information and activities related to the club.{' '
         keyboard={false}
 >
   <Modal.Header closeButton>
-  <Modal.Title>Modal title</Modal.Title>
+  <Modal.Title>SUCCESSFUL!</Modal.Title>
   </Modal.Header>
   <Modal.Body>
-          I will not close if you click outside me. Don't even try to press
-          escape key.
+    Thank you for registering! We will reach out to you soon.
   </Modal.Body>
   <Modal.Footer>
   <Button variant="secondary" onClick={handleClose}>
             Close
   </Button>
-  <Button variant="primary">Understood</Button>
+  <Button variant="primary" >Okay</Button>
   </Modal.Footer>
-  </Modal>*/}
+  </Modal>
     
     
 
@@ -231,6 +247,5 @@ I will be guiding you on the information and activities related to the club.{' '
   );
 }
 
-//render(<Example />);
 
 export default App;

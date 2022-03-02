@@ -29,6 +29,16 @@
     color: black;
   }
 
+  .cards{
+    display: inline-block;
+    width: 33px;
+    justify-content: space-evenly;
+    padding-top: 50;
+    padding-left: 500;
+    width: 33%;
+    margin: 50;
+  }
+
   .card1{
     display: flex;
     flex-direction: row;

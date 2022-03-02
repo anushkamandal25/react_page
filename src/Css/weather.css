@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .app {
+    background-image: url('https://source.unsplash.com/1600x900/?pattern');
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease;
+  }
+  
+  /*}.app.warm {
+    background-image: url('./assets/warm-bg.jpg');
+  }*/
+  
+  main {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+    padding: 25px;
+  }
+  
+  .search-box {
+    width: 60%;
+    justify-items: center;
+    margin: 0 0 75px;
+    margin-top: 50px;
+    justify-self: center;
+  }
+  
+  .search-box .search-bar {
+    display: flex;
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 16px 16px 16px 16px;
+    margin: 1em;
+    position: center;
+    margin-left: 10em;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+    
+    color: #313131;
+    font-size: 20px;
+  }
+  
+  .search-box .search-bar:focus {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  
+  .location-box .location {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  }
+  
+  .location-box .date {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  }
+  
+  .weather-box {
+    text-align: center;
+  }
+  
+  .weather-box .temp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 15px 25px;
+    color: #FFF;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:500;
+  
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+    text-align: center;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .weather-box .weather {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    color: #FFF;
+    font-size: 28px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    text-shadow: 3px 3px rgb(109, 109, 141);
+  }
