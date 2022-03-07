@@ -9,11 +9,14 @@ import {
   Link
 } from "react-router-dom";
 
+import Todo from "./Todo";
+import Weather from "./Weather";
 
 
 
 
-import Navbar from "./Components/Navbar";
+
+//import Navbar from "./Components/Navbar";
 //import Introduction from "./Components/Introduction";
 
 import Footer from "./Components/Footer";
@@ -50,7 +53,63 @@ function App() {
 
   return (
     <>
-    <Navbar title=" CCA "/>
+    {/*<Navbar title=" CCA "/>*/}
+
+
+    <Router>
+      {/*<Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/todo" element={<Todo />} />
+        <Route path="/weather" element={<Weather />} />
+      </Routes>*/}
+
+      <Switch>
+          <Route path="/">
+          </Route>
+          <Route path="/Todo">
+            <Todo />
+          </Route>
+          <Route path="/Weather">
+            <Weather />
+          </Route>
+        </Switch>
+    
+
+
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">&nbsp; &nbsp; CCA</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">ABOUT</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">CELLS</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">FEST</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">JOIN US</a>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/" target="_blank" >Home</Link>
+  </li>
+              <li className="nav-item">
+              <Link className="nav-link" to="/Weather" target="_blank" >WEATHER</Link>
+              </li>
+              <li className="nav-item">
+              <Link className="nav-link" to="/Todo" target="_blank" >TODO</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    </Router>
 
     
     {/*<Introduction />*/}
