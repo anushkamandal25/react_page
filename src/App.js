@@ -1,13 +1,14 @@
 //import React from 'react';
 import './App.css';
 import React, { useState } from 'react';
-
+  
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
+
 
 import Todo from "./Todo";
 import Weather from "./Weather";
@@ -55,24 +56,21 @@ function App() {
     <>
     {/*<Navbar title=" CCA "/>*/}
 
-
     <Router>
-      {/*<Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/todo" element={<Todo />} />
-        <Route path="/weather" element={<Weather />} />
-      </Routes>*/}
-
+      <div>
       <Switch>
-          <Route path="/">
-          </Route>
-          <Route path="/Todo">
+          <Route exact path="/Todo">
             <Todo />
           </Route>
-          <Route path="/Weather">
+          <Route exact path="/Weather">
             <Weather />
           </Route>
+          <Route exact path="/" /> 
         </Switch>
+      </div>
+    
+
+
     
 
 
@@ -97,9 +95,6 @@ function App() {
                 <a className="nav-link" href="#">JOIN US</a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/" target="_blank" >Home</Link>
-  </li>
-              <li className="nav-item">
               <Link className="nav-link" to="/Weather" target="_blank" >WEATHER</Link>
               </li>
               <li className="nav-item">
@@ -109,9 +104,9 @@ function App() {
           </div>
         </div>
     </nav>
-    </Router>
-
     
+    
+
     {/*<Introduction />*/}
     {/*<Carousels />*/}
     {/*<Cards />*/}
@@ -302,6 +297,7 @@ I will be guiding you on the information and activities related to the club.{' '
 
 
     <Footer />
+    </Router>
     </>
   );
 }
