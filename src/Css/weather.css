@@ -1,25 +1,35 @@
+/*
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+  */
   
-  body {
+  .weather_body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  
-  .app {
     background-image: url('https://source.unsplash.com/1600x900/?pattern');
     background-size: cover;
     background-position: bottom;
     transition: 0.4 ease;
   }
   
+  /*.app {
+    background-image: url('https://source.unsplash.com/1600x900/?pattern');
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease;
+  }*/
+  
   /*}.app.warm {
     background-image: url('./assets/warm-bg.jpg');
   }*/
   
-  main {
+  .main_body {
     min-height: 100vh;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
     padding: 25px;

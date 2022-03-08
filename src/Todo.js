@@ -23,25 +23,27 @@ function App() {
   }
 
   return (
+    <div className="todo_body">
     <div className="App">
-      <div className="container">
-            <h1 className="heading">To-Do List</h1> 
+      <div className="container0">
+            <h1 className="heading1">To-Do List</h1> 
             <form onSubmit={handleSubmit}>
-            <div id="newtask">
+            <div id="newtask_1">
                 <input type="text" onChange={(e)=> setTodo(e.target.value)} value={todo} placeholder="Add a new task.."/> 
-                <button type="submit" id="push" >Add</button>
+                <button id="push" type="submit"  >Add</button>
             </div>
             </form>
             <div className="container1">
-              <div id="tasks">
+              <div id="tasks1">
                 {todos.map((todo)=> 
                 <div className="container2">
-                  <div key={todo.id}>
+                  <div className="taskname" key={todo.id}>
                     <div id="delete">{todo.text}</div>
-                    
-                      <button className="delete btn btn-primary btn-lg d-block my-5 mx-auto" onClick={() => deleteTodo(todo.id)}>
+                  
+                      <button id="push" className="delete btn btn-primary btn-lg d-block my-5 mx-righ" onClick={() => deleteTodo(todo.id)}>
                         Delete
                       </button>
+                      
                     
                   </div>
                 </div>)
@@ -51,6 +53,7 @@ function App() {
     
             
       </div>
+    </div>
     </div>
   );
 }
