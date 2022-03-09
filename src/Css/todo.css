@@ -18,10 +18,11 @@
     height: 100vh;
     width: 100%;
     background: #000000;
-    background-image: url('https://source.unsplash.com/1600x900/?pattern');
+    background-image: url('https://source.unsplash.com/1600x1000/?pattern');
     background-repeat: repeat;
+    background-size:  100% 100%;
 
-    background-size: cover;
+    
     background-position: bottom;
     transition: 0.4 ease;
 
@@ -46,7 +47,7 @@
     max-height: max-content;
     min-width: 450px;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 5px;
     transform: translate(-50%,-50%);
     top: 35%;
     left: 50%;
@@ -57,7 +58,7 @@
   .container1{
     color: #000000;
     background: whitesmoke;
-    margin-top: 25;
+    margin-top: 25px;
     opacity: 1.0;
     width: 60%;
     min-width: 450px;
@@ -72,7 +73,7 @@
       color: black;
       background-color: #c5e1e6;
       opacity: 5.0;
-      height: 70px;
+      height: 55px;
       padding: 10px 10px;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -204,13 +205,14 @@
   }
   
   #push {
+    margin-top: 10;
+    margin-bottom: 10;
     align-items: center;
     font-size: 15px;
     background-color: rgb(217, 60, 35);
     color: #fff;
     border-radius: 8px;
-    margin-top: 10;
-    margin-bottom: 10;
+    
     border: none;
     padding: 8px 16px;
     cursor: pointer;

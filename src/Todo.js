@@ -40,7 +40,7 @@ function App() {
                   <div className="taskname" key={todo.id}>
                     <div id="delete">{todo.text}</div>
                   
-                      <button id="push" className="delete btn btn-primary btn-lg d-block my-5 mx-righ" onClick={() => deleteTodo(todo.id)}>
+                      <button id="push" className="delete btn btn-primary btn-lg d-block my-5 mx-center" onClick={() => deleteTodo(todo.id)}>
                         Delete
                       </button>
                       
